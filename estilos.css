@@ -31,7 +31,6 @@ h2 {
     margin-bottom: 40px;
 }
 
-
 ol, ul {
     margin: 0;
     padding: 0;
@@ -42,6 +41,15 @@ figure {
     margin: 0;
 }
 
+.container {
+    margin: 0 auto;
+    width: 1000px;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
 
 .header{
     background-color: #1b2127;
@@ -68,6 +76,8 @@ figure {
     align-items: center;
     height: inherit;
     padding: 0 10px;
+    color: white;
+    text-decoration: none;
 }
 
 .menu {
@@ -76,13 +86,18 @@ figure {
 
 .hero{
     height: 300px;
-    background-image: url(https://static.platzi.com/media/tmp/class-files/git/desarrollo-web-portafolio/desarrollo-web-portafolio-9af19a0a0fcd9fb6a66c3831cca6aaebf3328762/images/hero.jpg);
+    /* background-image: url(https://static.platzi.com/media/tmp/class-files/git/desarrollo-web-portafolio/desarrollo-web-portafolio-9af19a0a0fcd9fb6a66c3831cca6aaebf3328762/images/hero.jpg); */
     background-color: #1b2127;
-    background-size: 500PX 300PX;
-    background-repeat: no-repeat;
-    background-position-x: right;
+    /* background-size: 500PX 300PX; */
+    /* background-repeat: no-repeat;
+    background-position-x: right; */
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.hero-img {
+    object-fit: cover;
 }
 
 .project{
@@ -131,9 +146,111 @@ figure {
     padding: 20px;
 }
 
-.header a {
-    color: white;
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.event-list-title {
+    margin-left: 20px;
+}
+
+.event {
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f4fbff;
+}
+
+.event img {
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-detail {
+    margin: 20px 40px;
+    margin-top: -50px;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.event-description {
+    text-align: left;
+}
+
+.event-url {
+    color:  #056fff;
+    border: 1px solid;
+    padding: 5px 20px;
     text-decoration: none;
+    border-radius: 5px;
+    
+}
+
+
+.contact {
+    background-color: #056fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    background-size:  50px 50px;
+}
+
+.social-link.twitter {
+    background-image: url('src/twitter.svg');
+}
+
+.social-link.facebook {
+    background-image: url('src/facebook.svg');
+}
+
+.social-link.github {
+    background-image: url('src/github.svg');
+}
+.social-link.instagram {
+    background-image: url('src/instagram.svg');
+}
+
+.form-email input{
+    border-color: gray;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px 20px 10px 25px;
+    background-image: url('');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.form-email button {
+    display: block;
+    background: transparent;
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+    /* margin: 10px auto 0; */
+}
+
+.form-email h3 {
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .footer {
